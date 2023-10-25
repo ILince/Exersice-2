@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
   <title>Commentaires</title>
+ 
 </head>
 <body class="antialiased font-sans bg-white">
+   
   <div>
     <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6">      
       <div class="bg-white">
@@ -64,11 +66,12 @@
           </div>          
         </div>
         <!-- FORM  -->
-        <form action="#" method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+        <form action="#" method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" id="form">
           <div>
             <label for="first-name" class="block text-sm font-medium text-warm-gray-900">Prénom</label>
             <div class="mt-1">
               <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500">
+
             </div>
           </div>
           <div>
@@ -86,6 +89,7 @@
               <textarea id="message" name="message" rows="4" maxlength="500" class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500" aria-describedby="message-max"></textarea>
             </div>
           </div>
+  
           <div class="sm:col-span-2 sm:flex sm:justify-end">
             <button type="submit" class="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-teal-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 sm:w-auto">
               Envoyer
@@ -96,5 +100,6 @@
     </div>
   </div>
 </div>
+<script src="Js/script.js"></script>
 </body>
 </html>
