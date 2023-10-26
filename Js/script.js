@@ -50,7 +50,6 @@ function showNewComment() {
   let commentList = document.getElementById("commentList");
   let commentTemplate = document.getElementById("commentTemplate");
   let newComment = commentTemplate.cloneNode(true);
-  newComment.style.display = "block";
 
   // Mise à jour du contenu du commentaire cloné.
   newComment.querySelector("h3").textContent =
